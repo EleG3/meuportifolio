@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luiz Guilherme — Infraestrutura & Ferramentas Internas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="splash" id="splash" role="status" aria-live="polite">
+<svg class="splash-logo" viewBox="0 0 120 120" width="88" height="88">
+  <polygon class="splash-hex" points="60,6 108,33 108,87 60,114 12,87 12,33"></polygon>
+  <text class="splash-initials" x="60" y="68" text-anchor="middle">LG</text>
+</svg>
+<div class="splash-bar"><div class="splash-bar-fill"></div></div>
+<div class="splash-label" id="splashLabel">iniciando sistema...</div>
+</div>
+
+<div class="bg-grid"></div>
+
+<nav>
+<div class="wrap nav-inner">
+  <div class="logo"><span class="dot"></span> LUIZ GUILHERME · TI</div>
+  <div class="navlinks" id="navlinks">
+    <a href="#projetos">Projetos</a>
+    <a href="#skills">Competências</a>
+    <a href="#contato">Contato</a>
+  </div>
+  <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</div>
+</nav>
+
+<div class="wrap">
+
+<header class="hero">
+  <div class="eyebrow" id="typeline">&nbsp;<span class="type-cursor"></span></div>
+  <h1>Resolvo problemas de infraestrutura e <span class="hl">construo as ferramentas</span> que a operação usa todo dia.</h1>
+  <p class="hero-sub">
+    Atuo na linha de frente do suporte técnico e desenvolvo aplicações internas simples e diretas —
+    pensadas pra quem está no chão de loja, não pra impressionar em uma demo.
+  </p>
+  <div class="hero-actions">
+    <a class="btn btn-primary" href="#projetos">Ver projetos →</a>
+    <a class="btn btn-ghost" href="#contato">Falar comigo</a>
+  </div>
+
+  <div class="topo-wrap">
+    <div class="topo-head">
+      <span>topologia.svc — mapa de atuação</span>
+      <span class="live"><span class="dot"></span><span id="uptime">uptime 00:00:00</span></span>
+    </div>
+    <div class="topo-body">
+      <svg class="topo" viewBox="0 0 720 260" id="topoSvg">
+        <!-- links drawn by JS -->
+        <g id="topoLinks"></g>
+        <g id="topoNodes"></g>
+      </svg>
+      <div class="topo-detail" id="topoDetail">
+        <span>Passe o mouse ou toque nos nós pra ver detalhes de cada frente de atuação.</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="projetos">
+  <div class="section-head reveal">
+    <span class="section-num">01</span>
+    <span class="section-title">Projetos em produção</span>
+  </div>
+
+  <div id="caseList"></div>
+</section>
+
+<section id="skills">
+  <div class="section-head reveal">
+    <span class="section-num">02</span>
+    <span class="section-title">Competências</span>
+  </div>
+  <div class="skills-grid reveal">
+    <div class="skill-card">
+      <div class="n">REDE</div>
+      <h4>Diagnóstico de rede</h4>
+      <p>Identificação de dispositivos, ARP, OUI, switches, resolução de conflitos de conectividade.</p>
+    </div>
+    <div class="skill-card">
+      <div class="n">SUP</div>
+      <h4>Suporte técnico</h4>
+      <p>Hardware, boot, instalação e recuperação de sistemas em ambiente corporativo.</p>
+    </div>
+    <div class="skill-card">
+      <div class="n">DEV</div>
+      <h4>Ferramentas internas</h4>
+      <p>Aplicações web leves e diretas pra resolver problemas reais da operação.</p>
+    </div>
+    <div class="skill-card">
+      <div class="n">OPS</div>
+      <h4>Ambiente local</h4>
+      <p>XAMPP, PHP, configuração de servidor local pra prototipagem rápida.</p>
+    </div>
+  </div>
+</section>
+
+<footer id="contato">
+  <div class="contact-row reveal">
+    <h2>Interessado em conversar sobre TI, redes ou automação?</h2>
+    <div class="contact-links">
+      <button class="clink" id="emailBtn" data-email="seuemail@exemplo.com">✉ seuemail@exemplo.com</button>
+      <a class="clink" href="#">↗ linkedin.com/in/seu-perfil</a>
+      <a class="clink" href="#">↗ github.com/seu-usuario</a>
+    </div>
+  </div>
+</footer>
+
+<div class="foot-note">protótipo · construído para aprendizado de HTML/CSS/JS</div>
+</div>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
