@@ -39,19 +39,11 @@ npx serve .
 
 Depois acesse `http://localhost:8000`.
 
-## Antes de publicar
-
-Atualize os dados de contato em `index.html` (seção `<footer id="contato">`):
-
-- `data-email="seuemail@exemplo.com"` → seu e-mail real
-- link do LinkedIn (`href="#"`)
-- link do GitHub (`href="#"`)
-
 ## Deploy no GitHub Pages
 
 1. Suba o repositório para o GitHub (veja passo a passo abaixo).
 2. Em **Settings → Pages**, selecione a branch `main` e a pasta raiz (`/`).
-3. O site ficará disponível em `https://seu-usuario.github.io/nome-do-repositorio/`.
+3. O site ficará disponível em `https://EleG3.github.io/meuportifolio/`.
 
 ## Publicando no Git
 
@@ -61,7 +53,7 @@ git init
 git add .
 git commit -m "Primeiro commit: portfólio pessoal"
 git branch -M main
-git remote add origin https://github.com/seu-usuario/nome-do-repositorio.git
+git remote add origin https://github.com/EleG3/meuportifolio.git
 git push -u origin main
 ```
 
