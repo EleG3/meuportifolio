@@ -22,38 +22,39 @@ Landing page pessoal desenvolvida para apresentar minha atuação em **suporte t
 - **JavaScript vanilla** — sem dependências externas
 - **Google Fonts**: [JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono) + [Manrope](https://fonts.google.com/specimen/Manrope)
 
-Projeto 100% estático, em um único arquivo — sem necessidade de build, bundler ou instalação de pacotes.
+Projeto 100% estático — sem build, bundler ou instalação de pacotes.
 
 ## 📂 Estrutura
 
 ```
-├── portfolio-v2.html   # página completa (HTML + CSS + JS inline)
+├── index.html      # estrutura da página — ponto de entrada do site
+├── style.css       # estilos, tema e responsividade
+├── main.js         # interatividade (splash, diagrama, accordion, uptime etc.)
 └── README.md
 ```
 
+> `index.html`, `style.css` e `main.js` ficam todos na **raiz** do repositório — não use `css/` ou `js/` nos caminhos, ou os estilos e o JS não vão carregar.
+
 ## 🚀 Como rodar localmente
 
-Basta abrir o arquivo diretamente no navegador:
-
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
+git clone https://github.com/EleG3/meuportifolio.git
+cd meuportifolio
 ```
 
-Ou, se preferir servir por um servidor local (recomendado para testar corretamente as fontes e animações):
+Abra `index.html` direto no navegador, ou sirva com um servidor local (recomendado, para carregar corretamente as fontes):
 
 ```bash
-python -m http.server 8000
+python3 -m http.server 8000
 ```
 
-Depois acesse `http://localhost:8000/portfolio-v2.html`.
+Depois acesse `http://localhost:8000`.
 
 ## 🌐 Publicando no GitHub Pages
 
-1. Renomeie `portfolio-v2.html` para `index.html` (ou configure o Pages para apontar direto para ele)
-2. Vá em **Settings → Pages** no repositório
-3. Selecione a branch (geralmente `main`) e a pasta raiz
-4. Salve — o link ficará disponível em `https://seu-usuario.github.io/seu-repositorio`
+1. Vá em **Settings → Pages** no repositório
+2. Em **Source**, selecione a branch `main` e a pasta raiz (`/`)
+3. Salve — o site fica disponível em `https://eleg3.github.io/meuportifolio`
 
 ## 📌 Projetos em destaque
 
@@ -64,11 +65,9 @@ Depois acesse `http://localhost:8000/portfolio-v2.html`.
 
 ## 📫 Contato
 
-- ✉ e-mail: luizzguilherme001@gmail.com
-- LinkedIn: (https://www.linkedin.com/in/luiz-guilherme-00538b301/)
-- GitHub: https://github.com/EleG3
-
-
+- ✉ e-mail: [luizzguilherme001@gmail.com](mailto:luizzguilherme001@gmail.com)
+- LinkedIn: [linkedin.com/in/luiz-guilherme-00538b301](https://www.linkedin.com/in/luiz-guilherme-00538b301/)
+- GitHub: [github.com/EleG3](https://github.com/EleG3)
 
 ---
 
