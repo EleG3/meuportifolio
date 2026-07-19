@@ -1,65 +1,75 @@
-# Portfólio — Luiz Guilherme
+# Portfólio — Luiz Guilherme · TI
 
-Site pessoal em página única (single-page) apresentando experiência em infraestrutura de TI, suporte técnico e ferramentas internas desenvolvidas para operação de loja.
+Landing page pessoal desenvolvida para apresentar minha atuação em **suporte técnico, infraestrutura de rede e desenvolvimento de ferramentas internas**, com foco em soluções simples e diretas para o dia a dia da operação (lojas Atacadão).
 
-## Estrutura do projeto
+> Resolvo problemas de infraestrutura e construo as ferramentas que a operação usa todo dia.
+
+## ✨ Funcionalidades
+
+- **Splash screen animada** de abertura com logo em SVG
+- **Efeito de digitação** no hero, alternando entre frentes de atuação
+- **Diagrama de topologia interativo** (SVG) mapeando as áreas de atuação: Rede, Suporte, Dev e Ops
+- **Cases de projetos** em formato acordeão, com stack utilizada em cada um
+- **Grid de competências técnicas**
+- **Botão de copiar e-mail** com feedback visual
+- **Menu responsivo** (mobile-first, com burger menu)
+- Suporte a `prefers-reduced-motion` para acessibilidade
+
+## 🛠️ Tecnologias
+
+- **HTML5** semântico
+- **CSS3** puro — custom properties, grid, animações e responsividade (sem frameworks)
+- **JavaScript vanilla** — sem dependências externas
+- **Google Fonts**: [JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono) + [Manrope](https://fonts.google.com/specimen/Manrope)
+
+Projeto 100% estático, em um único arquivo — sem necessidade de build, bundler ou instalação de pacotes.
+
+## 📂 Estrutura
 
 ```
-portfolio/
-├── index.html          # Estrutura da página (HTML)
-├── css/
-│   └── style.css       # Estilos, temas e responsividade
-├── js/
-│   └── main.js         # Interatividade (splash, diagrama, accordion, etc.)
+├── portfolio-v2.html   # página completa (HTML + CSS + JS inline)
 └── README.md
 ```
 
-## Funcionalidades
+## 🚀 Como rodar localmente
 
-- Tela de abertura (splash) animada, com suporte a `prefers-reduced-motion`
-- Efeito de digitação (typing effect) no cabeçalho
-- Diagrama de topologia em SVG, interativo, mostrando as frentes de atuação
-- Contador de "uptime" ao vivo
-- Lista de projetos em formato accordion
-- Botão de copiar e-mail para a área de transferência
-- Menu responsivo para dispositivos móveis
-- Animações de "reveal" ao rolar a página (Intersection Observer)
-
-## Como rodar localmente
-
-Não há build nem dependências — é HTML/CSS/JS puro. Basta abrir o `index.html` no navegador, ou servir a pasta com um servidor local simples:
+Basta abrir o arquivo diretamente no navegador:
 
 ```bash
-# Python
-python3 -m http.server 8000
-
-# ou Node (com o pacote "serve")
-npx serve .
+git clone https://github.com/seu-usuario/seu-repositorio.git
+cd seu-repositorio
 ```
 
-Depois acesse `http://localhost:8000`.
-
-## Deploy no GitHub Pages
-
-1. Suba o repositório para o GitHub (veja passo a passo abaixo).
-2. Em **Settings → Pages**, selecione a branch `main` e a pasta raiz (`/`).
-3. O site ficará disponível em `https://EleG3.github.io/meuportifolio/`.
-
-## Publicando no Git
+Ou, se preferir servir por um servidor local (recomendado para testar corretamente as fontes e animações):
 
 ```bash
-cd portfolio
-git init
-git add .
-git commit -m "Primeiro commit: portfólio pessoal"
-git branch -M main
-git remote add origin https://github.com/EleG3/meuportifolio.git
-git push -u origin main
+python -m http.server 8000
 ```
 
-## Tecnologias
+Depois acesse `http://localhost:8000/portfolio-v2.html`.
 
-- HTML5 semântico
-- CSS3 (custom properties, grid, flexbox, animações)
-- JavaScript puro (Vanilla JS, sem frameworks)
-- Fontes: [JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono) e [Manrope](https://fonts.google.com/specimen/Manrope), via Google Fonts
+## 🌐 Publicando no GitHub Pages
+
+1. Renomeie `portfolio-v2.html` para `index.html` (ou configure o Pages para apontar direto para ele)
+2. Vá em **Settings → Pages** no repositório
+3. Selecione a branch (geralmente `main`) e a pasta raiz
+4. Salve — o link ficará disponível em `https://seu-usuario.github.io/seu-repositorio`
+
+## 📌 Projetos em destaque
+
+| Projeto | Descrição | Stack |
+|---|---|---|
+| **Controle de Equipamentos de Rádio** | Sistema de check-in/check-out de rádios comunicadores, com login multiusuário por PIN, rastreamento em tempo real, auditoria por turno e exportação em CSV | HTML/CSS/JS, localStorage |
+| **Gerenciador de Escala Semanal** | Ferramenta de montagem de escalas com validação automática de intervalo mínimo de descanso conforme a CLT | HTML/CSS/JS, validação de regras |
+
+## 📫 Contato
+
+- ✉ e-mail: luizzguilherme001@gmail.com
+- LinkedIn: (https://www.linkedin.com/in/luiz-guilherme-00538b301/)
+- GitHub: https://github.com/EleG3
+
+
+
+---
+
+*Protótipo construído para aprendizado de HTML/CSS/JS.*
